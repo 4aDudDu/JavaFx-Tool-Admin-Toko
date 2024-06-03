@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="600.0" style="-fx-background-color: Lightskyblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="39.0" layoutY="213.0" prefHeight="164.0" prefWidth="123.0">
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="123.0" pickOnBounds="true">
+               <image>
+                  <Image url="@foto/rido.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="49.0" prefHeight="155.0" prefWidth="158.0">
+         <children>
+            <ImageView fitHeight="157.0" fitWidth="124.0" pickOnBounds="true">
+               <image>
+                  <Image url="@foto/ryan.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label layoutX="230.0" layoutY="14.0" prefHeight="29.0" prefWidth="139.0" text="CREATOR">
+         <font>
+            <Font name="Sobiscuit" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7386363509929541">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.800000011920929" green="0.26370370388031006" blue="0.26370370388031006" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4736842215061188" green="0.11052631586790085" blue="0.11052631586790085" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="191.0" layoutY="213.0" prefHeight="155.0" prefWidth="354.0" style="-fx-border-color: blue; -fx-border-radius: 5;" text="Nama: Muhamad Ridho Fatjrullah                                            tanggal lahir: 22 Agustus 2003                                                                                                motto: keep do ur life and reach ur goals                                                                                            hobby: main game valorant" wrapText="true" />
+      <Label layoutX="191.0" layoutY="51.0" prefHeight="155.0" prefWidth="354.0" style="-fx-border-color: blue; -fx-border-radius: 5;" text="Nama: Adryan Mahaputra                                                                tanggal lahir: 2 September 2002                                                                                                  motto: ya,gitula..                                                                                 hobby: Gaming, Melukis, Musik, Ngoding" wrapText="true" />
+   </children>
+</AnchorPane>

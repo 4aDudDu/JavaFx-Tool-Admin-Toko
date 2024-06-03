@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="aplikasiController" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Lightskyblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AplikasitokoController">
+    <VBox alignment="CENTER" spacing="10" />
+    <Label layoutX="182.0" layoutY="14.0" prefHeight="35.0" prefWidth="206.0" text="AssistenKu" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Sobiscuit" size="33.0" />
+        </font>
+      <effect>
+         <Lighting diffuseConstant="0.87" specularConstant="1.51" specularExponent="25.87" surfaceScale="6.18">
+            <bumpInput>
+               <Shadow blurType="ONE_PASS_BOX" />
+            </bumpInput>
+            <light>
+               <Light.Distant>
+                  <color>
+                     <Color red="0.11728394776582718" green="1.0" blue="0.03703703731298447" />
+                  </color>
+               </Light.Distant>
+            </light>
+         </Lighting>
+      </effect>
+    </Label>
+    <Label layoutX="202.0" layoutY="52.0" text="tools admin toko barang 😊" textFill="WHITE">
+        <font>
+            <Font name="Segoe Print" size="12.0" />
+        </font>
+      <effect>
+         <Glow level="1.0" />
+      </effect>
+    </Label>
+     <Button layoutX="249.0" layoutY="127.0" onAction="#handleNewBarangButtonClick" style="-fx-background-color: Lightskyblue; -fx-background-radius: 10;" text="Barang Baru" textFill="#0019ff">
+         <font>
+             <Font name="Handmade Notes" size="12.0" />
+         </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+     </Button>
+     <Button layoutX="254.0" layoutY="164.0" onAction="#handleStokMasukButtonClick" style="-fx-background-color: Lightskyblue; -fx-background-radius: 10;" text="Stok Masuk" textFill="#0019ff">
+         <font>
+             <Font name="Handmade Notes" size="12.0" />
+         </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+     </Button>
+     <Button layoutX="253.0" layoutY="200.0" onAction="#handleStokKeluarButtonClick" style="-fx-background-color: Lightskyblue; -fx-background-radius: 10;" text="Stok Keluar" textFill="#0019ff">
+         <font>
+             <Font name="Handmade Notes" size="12.0" />
+         </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+     </Button>
+     <Button layoutX="253.0" layoutY="237.0" onAction="#handleListBarangButtonClick" style="-fx-background-color: Lightskyblue; -fx-background-radius: 10;" text="List Barang" textFill="#0019ff">
+         <font>
+             <Font name="Handmade Notes" size="12.0" />
+         </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+     </Button>
+     <Button layoutX="264.0" layoutY="364.0" onAction="#handleCreditButtonClick" style="-fx-background-color: Lightskyblue; -fx-background-radius: 10;" text="Credit" textFill="#0019ff">
+         <font>
+             <Font name="Handmade Notes" size="12.0" />
+         </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+     </Button>
+</AnchorPane>
